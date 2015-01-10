@@ -1,0 +1,39 @@
+body {
+  @include container;
+  @include breakpoint(xs) {
+    background-color: lightgreen;
+  }
+  @include breakpoint(sm) {    
+    @include container;
+    background-color: beige;
+  }
+}
+
+.wide {
+  @include container(100%);
+  background: blue;
+  padding: 1em;
+  margin: 1em auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+}
+
+$background-colors-list: #4BC2A5 #606F40 #6648CA #6B6022 #2F54E9;
+$border-colors-list: #ff9900 #77ff66 #73C227 #C23E50 #7BAFC2;
+$colors-list: #111 #222 #333 #444 #555;
+
+.gallery {
+  @include clearfix;
+  padding: gutter(8);
+  @include bleed(gutter(8));
+  .gallery-item {
+    @include gallery(5 of 20);
+    margin-bottom: gutter(10);
+    background-color: darkgrey;
+    height: 300px;
+  }
+}

@@ -1,0 +1,76 @@
+//bootstrap-styled breakpoints
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+// nav toggle
+//@mixin navtoggle($size: 20px, $width: 1px, $color: #000, $color-hover: $color, $color-active: $color) {
+//  position: relative;
+//  width: $size;
+//  height: $size;
+//  cursor: pointer;
+//
+//  &:before,
+//  &:after {
+//    content: '';
+//    position: absolute;
+//    left: 0;
+//    height: $width; // Wurzel aus 2
+//    width: $size;
+//    background: $color;
+//    border-radius: $width/2;
+//    transition: .2s;
+//  }
+//  &:before {
+//    top: 0+$width;
+//    transform-origin: 0 0;
+//    box-shadow: 0 ($size/2)-$width*1.5 0 0 $color;
+//  }
+//  &:after {
+//    bottom: 0+$width;
+//    transform-origin: 0 100%;
+//  }
+//
+//  &:hover:before {
+//    box-shadow: 0 ($size/2)-$width*1.5 0 0 $color-hover;
+//  }
+//
+//  &:hover:before,
+//  &:hover:after {
+//    background: $color-hover;
+//    transition: .2s;
+//  }
+//
+//  &.active:before,
+//  &.active:after {
+//    background: $color-active;
+//    transition: .2s;
+//    width: $size+($width/($width/2));
+//  }
+//
+//  &.active:before {
+//    transform: rotate(45deg) translate($width/2, -$width); 
+//    box-shadow: 0 0 10px transparent;
+//  }
+//  &.active:after {
+//    transform: rotate(-45deg) translate($width/2, $width);
+//  }
+//}
