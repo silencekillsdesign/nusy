@@ -1,10 +1,32 @@
+.container {
+//  @include container($susy); 
+  
+  // Phone View 
+  @include breakpoint(xs) {    
+    @include container(4)  
+      }
+  
+  // Tablet View 
+  @include breakpoint(sm) {    
+    @include container(8)  
+      }
+
+  // Desktop View 
+  @include breakpoint(lg) {    
+    @include container(12)  
+      }
+  
+  // XL Screen View 
+  @include breakpoint(xl) {    
+    @include container(20)  
+      }
+}
+
 body {
-  @include container;
   @include breakpoint(xs) {
     background-color: lightgreen;
   }
-  @include breakpoint(sm) {    
-    @include container;
+  @include breakpoint(sm) {
     background-color: beige;
   }
 }
@@ -12,28 +34,54 @@ body {
 .wide {
   @include container(100%);
   background: blue;
-  padding: 1em;
-  margin: 1em auto;
+  padding: 2em 0;
+  margin: 0em auto;
   text-align: center;
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 3em;
 }
 
-$background-colors-list: #4BC2A5 #606F40 #6648CA #6B6022 #2F54E9;
-$border-colors-list: #ff9900 #77ff66 #73C227 #C23E50 #7BAFC2;
-$colors-list: #111 #222 #333 #444 #555;
+.span-4 {
+  @include span(4 float);
+  height: 100px;
+  background-color: darkgrey;
+}
 
 .gallery {
-  @include clearfix;
-  padding: gutter(8);
-  @include bleed(gutter(8));
-  .gallery-item {
-    @include gallery(5 of 20);
-    margin-bottom: gutter(10);
-    background-color: darkgrey;
+  @include container(100% inside);
+  @include clearfix;  
+  padding-bottom: 0;    
+  @include breakpoint(xs) {
+    @include nested(1 no-gutters);
+  } 
+  @include breakpoint(sm) {
+    @include nested(3);
+  }
+  @include breakpoint(lg) {
+    @include nested(4 no-gutters);
+//    padding: gutter(4);
+//    margin: gutter(4); 
+//    @include bleed(gutter(4));
+  }
+  
+  img {
+    background-color: grey;
     height: 300px;
+    width: 100%;
+    @include breakpoint(xs) {
+      @include gallery(1 of 1);
+      margin-bottom: gutter(1);
+    }
+    @include breakpoint(sm) {
+      @include gallery(1 of 3);
+      margin-bottom: gutter(3);
+    }
+    @include breakpoint(lg) {
+      @include gallery(1 of 4);
+      margin-bottom: gutter(4);
+    }
   }
 }

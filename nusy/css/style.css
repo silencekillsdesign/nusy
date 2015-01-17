@@ -64,37 +64,81 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../scss/_base.scss */
-body {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiM2NjY2ZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iOTAlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(10%, rgba(0, 0, 0, 0)), color-stop(10%, rgba(102, 102, 255, 0.25)), color-stop(90%, rgba(179, 179, 255, 0.25)), color-stop(90%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-size: 5%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
-}
-/* line 12, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-body:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
 @media (max-width: 767px) {
   /* line 1, ../scss/_base.scss */
-  body {
-    background-color: lightgreen;
+  .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiM2NjY2ZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iOTAlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(10%, rgba(0, 0, 0, 0)), color-stop(10%, rgba(102, 102, 255, 0.25)), color-stop(90%, rgba(179, 179, 255, 0.25)), color-stop(90%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 25%, 100% 24px;
+    background-origin: content-box, border-box;
+    background-clip: content-box, border-box;
+    background-position: left top;
+  }
+  /* line 12, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
   }
 }
 @media (min-width: 768px) {
   /* line 1, ../scss/_base.scss */
-  body {
+  .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiM2NjY2ZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iOTAlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(10%, rgba(0, 0, 0, 0)), color-stop(10%, rgba(102, 102, 255, 0.25)), color-stop(90%, rgba(179, 179, 255, 0.25)), color-stop(90%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 12.5%, 100% 24px;
+    background-origin: content-box, border-box;
+    background-clip: content-box, border-box;
+    background-position: left top;
+  }
+  /* line 12, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1, ../scss/_base.scss */
+  .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiM2NjY2ZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iOTAlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(10%, rgba(0, 0, 0, 0)), color-stop(10%, rgba(102, 102, 255, 0.25)), color-stop(90%, rgba(179, 179, 255, 0.25)), color-stop(90%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 8.33333%, 100% 24px;
+    background-origin: content-box, border-box;
+    background-clip: content-box, border-box;
+    background-position: left top;
+  }
+  /* line 12, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 1400px) {
+  /* line 1, ../scss/_base.scss */
+  .container {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -108,17 +152,29 @@ body:after {
     background-origin: content-box, border-box;
     background-clip: content-box, border-box;
     background-position: left top;
-    background-color: beige;
   }
   /* line 12, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-  body:after {
+  .container:after {
     content: " ";
     display: block;
     clear: both;
   }
 }
 
-/* line 12, ../scss/_base.scss */
+@media (max-width: 767px) {
+  /* line 25, ../scss/_base.scss */
+  body {
+    background-color: lightgreen;
+  }
+}
+@media (min-width: 768px) {
+  /* line 25, ../scss/_base.scss */
+  body {
+    background-color: beige;
+  }
+}
+
+/* line 34, ../scss/_base.scss */
 .wide {
   max-width: 100%;
   margin-left: auto;
@@ -129,13 +185,13 @@ body:after {
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, rgba(0, 0, 0, 0) 90%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-size: 5%, 100% 24px;
+  background-size: 25%, 100% 24px;
   background-origin: content-box, border-box;
   background-clip: content-box, border-box;
   background-position: left top;
   background: blue;
-  padding: 1em;
-  margin: 1em auto;
+  padding: 2em 0;
+  margin: 0em auto;
   text-align: center;
 }
 /* line 12, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
@@ -145,52 +201,246 @@ body:after {
   clear: both;
 }
 
-/* line 20, ../scss/_base.scss */
+/* line 42, ../scss/_base.scss */
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 3em;
 }
 
-/* line 29, ../scss/_base.scss */
+/* line 47, ../scss/_base.scss */
+.span-4 {
+  width: 95%;
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  height: 100px;
+  background-color: darkgrey;
+}
+
+/* line 53, ../scss/_base.scss */
 .gallery {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(100%, rgba(179, 179, 255, 0.25))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 25%, 100% 24px;
+  background-origin: content-box, border-box;
+  background-clip: content-box, border-box;
+  background-position: left top;
   overflow: hidden;
   *zoom: 1;
-  padding: 1.25%;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  margin: -1.25%;
-  padding: 1.25%;
+  padding-bottom: 0;
 }
-/* line 33, ../scss/_base.scss */
-.gallery .gallery-item {
-  width: 24%;
-  float: left;
-  margin-bottom: 1%;
-  background-color: darkgrey;
-  height: 300px;
-}
-/* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
-.gallery .gallery-item:nth-child(4n + 1) {
-  margin-left: 0.5%;
-  margin-right: -100%;
+/* line 12, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.gallery:after {
+  content: " ";
+  display: block;
   clear: both;
 }
-/* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
-.gallery .gallery-item:nth-child(4n + 2) {
-  margin-left: 25.5%;
-  margin-right: -100%;
-  clear: none;
+/* line 70, ../scss/_base.scss */
+.gallery img {
+  background-color: grey;
+  height: 300px;
+  width: 100%;
 }
-/* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
-.gallery .gallery-item:nth-child(4n + 3) {
-  margin-left: 50.5%;
-  margin-right: -100%;
-  clear: none;
+@media (max-width: 767px) {
+  /* line 70, ../scss/_base.scss */
+  .gallery img {
+    width: 80%;
+    float: left;
+    margin-bottom: 10%;
+  }
+  /* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .gallery img:nth-child(1n + 1) {
+    margin-left: 10%;
+    margin-right: -100%;
+    clear: none;
+  }
 }
-/* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
-.gallery .gallery-item:nth-child(4n + 4) {
-  margin-left: 75.5%;
-  margin-right: -100%;
-  clear: none;
+@media (min-width: 768px) {
+  /* line 70, ../scss/_base.scss */
+  .gallery img {
+    width: 26.66667%;
+    float: left;
+    margin-bottom: 3.33333%;
+  }
+  /* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .gallery img:nth-child(3n + 1) {
+    margin-left: 3.33333%;
+    margin-right: -100%;
+    clear: both;
+  }
+  /* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .gallery img:nth-child(3n + 2) {
+    margin-left: 36.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .gallery img:nth-child(3n + 3) {
+    margin-left: 70.0%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 70, ../scss/_base.scss */
+  .gallery img {
+    width: 20%;
+    float: left;
+    margin-bottom: 2.5%;
+  }
+  /* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .gallery img:nth-child(4n + 1) {
+    margin-left: 2.5%;
+    margin-right: -100%;
+    clear: both;
+  }
+  /* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .gallery img:nth-child(4n + 2) {
+    margin-left: 27.5%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .gallery img:nth-child(4n + 3) {
+    margin-left: 52.5%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../RUBY21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .gallery img:nth-child(4n + 4) {
+    margin-left: 77.5%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/* line 29, ../scss/_nav.scss */
+.toggle:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 39, ../scss/_nav.scss */
+header {
+  background-color: #8800ed;
+  text-align: center;
+  min-height: 2em;
+}
+/* line 43, ../scss/_nav.scss */
+header .logo {
+  padding: 2em;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 43, ../scss/_nav.scss */
+  header .logo {
+    display: none;
+  }
+}
+
+/* line 53, ../scss/_nav.scss */
+nav {
+  font-family: "Raleway", Arial, sans-serif;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  min-height: 2em;
+}
+/* line 59, ../scss/_nav.scss */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 1.5em;
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 53, ../scss/_nav.scss */
+  nav {
+    display: none;
+    padding: 1em 0 0;
+  }
+  /* line 67, ../scss/_nav.scss */
+  nav a {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 1.5em 0;
+    border-bottom: 1px solid white;
+  }
+  /* line 73, ../scss/_nav.scss */
+  nav a:hover {
+    background-color: #6b00ba;
+  }
+  /* line 76, ../scss/_nav.scss */
+  nav a:first-of-type {
+    margin-top: .5em;
+  }
+  /* line 79, ../scss/_nav.scss */
+  nav a:last-of-type {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 88, ../scss/_nav.scss */
+  header:hover nav {
+    display: block;
+  }
+  /* line 92, ../scss/_nav.scss */
+  header:hover .toggle::before {
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -moz-box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    -webkit-box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  }
+}
+/* line 100, ../scss/_nav.scss */
+.toggle {
+  display: block;
+  margin: 0 auto;
+  padding: 1em 0 0;
+  text-decoration: none;
+  color: #fff;
+}
+/* line 107, ../scss/_nav.scss */
+.toggle::before {
+  display: block;
+  position: absolute;
+  margin: 1.25em auto;
+  top: .25em;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 1.75em;
+  border: 1px solid white;
+  -moz-box-shadow: 0 8px 0 0 #FFF, 0 -8px 0 0 #FFF;
+  -webkit-box-shadow: 0 8px 0 0 #FFF, 0 -8px 0 0 #FFF;
+  box-shadow: 0 8px 0 0 #FFF, 0 -8px 0 0 #FFF;
+}
+@media (min-width: 769px) {
+  /* line 107, ../scss/_nav.scss */
+  .toggle::before {
+    display: none;
+  }
+}
+
+/* line 124, ../scss/_nav.scss */
+.sk-left {
+  fill: #6357D0;
+}
+
+/* line 128, ../scss/_nav.scss */
+.sk-right {
+  fill: #6357D0;
 }

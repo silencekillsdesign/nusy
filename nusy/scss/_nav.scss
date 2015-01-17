@@ -1,7 +1,130 @@
-//.nav--toggle {
-//  @include navtoggle(40px, 6px, #000, blue, green);
-//  position: absolute;
-//  top: 50%;
-//  left: 50%;
-//  transform: translate(-50%, -50%);
-//}
+// Breakpoints
+$brkpoint--sm    : 1px;
+$brkpoint--md    : 768px;
+$brkpoint--lg    : 1100px;
+
+// Media queries
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint--sm) and (max-width: $brkpoint--md) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $brkpoint--md + 1) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $brkpoint--lg) {
+      @content;
+    }
+  }
+  @else {
+    @error "No value could be retrieved for `#{$break}`. "
+      }
+}
+//clearfix
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+
+//begin styles
+header {
+  background-color: #8800ed;
+  text-align: center;
+  min-height: 2em;
+  .logo {
+    padding: 2em;
+    margin: 0 auto;
+    display: block;
+    @include mq(small) {
+      display: none;
+    }
+  }
+}
+
+nav {
+  font-family: $font-stack--display;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  min-height: 2em;
+  a {
+    text-decoration: none;
+    color: #fff;
+    margin: 1.5em;
+  }
+  @include mq(small) {
+    display: none;
+    padding: 1em 0 0;
+    a {
+      width: 100%;
+      display: block;
+      margin: 0;
+      padding: 1.5em 0;
+      border-bottom: 1px solid white;
+      &:hover {
+        background-color: darken(#8800ed, 10);
+      }
+      &:first-of-type {
+        margin-top: .5em;
+      }
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@include mq(small) {
+  header:hover {
+    nav {
+      display: block;
+    }
+    .toggle {
+      &::before {
+        @include transition;
+        @include box-shadow(0 0 0 0 #FFF, 0 0 0 0 #FFF);
+      }      
+    }
+  }
+}
+
+.toggle {
+  display: block;
+  margin: 0 auto;
+  padding: 1em 0 0;
+  text-decoration: none;
+  color: #fff;
+  @extend %clearfix;
+  &::before {
+    display: block;
+    position: absolute;
+    margin: 1.25em auto;
+    top: .25em;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 1.75em;
+    border: 1px solid white;
+    @include box-shadow(0 8px 0 0 #FFF, 0 -8px 0 0 #FFF);
+    @include mq(medium) {
+      display: none;
+    }
+  }
+}
+
+.sk-left {
+  fill: #6357D0;
+}
+
+.sk-right {
+  fill: #6357D0;
+}

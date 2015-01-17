@@ -15,7 +15,7 @@ $susy: (
   container: auto, // length or % | auto
   container-position: center, // left | center | right | <length> [*2] (grid padding)
   last-flow: to,
-  columns: 20,
+  columns: 4,
   gutters: 1/4,
   gutter-position: split, // before | after | split | inside | inside-static (requires column-width)
   global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
